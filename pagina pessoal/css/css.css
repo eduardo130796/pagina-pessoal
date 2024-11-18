@@ -1,0 +1,109 @@
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color:#daa520;
+    font-size: 30px;
+ }
+p {
+   font-family: 'Arial Narrow';
+   color:rgb(62, 95, 158);
+   margin-left: 50px;
+   font-size: 20px;
+}
+img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 40%;
+}
+ul {
+   list-style-type: circle;
+}
+li {
+   color: darkred;
+   padding: 0px;
+   margin-left: 10px;
+}
+label {
+   font-family: 'Arial Narrow';
+   color:rgb(62, 95, 158);
+   margin-left: 50px;
+   font-size: 20px;
+}
+input{
+   width: 50%;
+   padding: 5px 10px;
+   margin-left: 50px;
+   box-sizing: border-box;
+ }
+ form{
+   display: block;
+   margin-left: auto;
+   margin-right: 50px;
+   width: 70%;
+ }
+ textarea {
+   width: 50%;
+   height: 150px;
+   padding: 12px 20px;
+   box-sizing: border-box;
+   border: 2px solid #ccc;
+   border-radius: 4px;
+   background-color: #f8f8f8;
+   resize: none;
+   margin-left: 50px;
+   margin-right: 50px;
+ }
+input[type=submit] {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: large;
+   background-color: #daa520;
+   border: none;
+   color: white;
+   padding: 16px 32px;
+   text-decoration: none;
+   margin: 4px 2px;
+   cursor: pointer;
+   margin-left: 50px;
+   margin-right: 50px;
+ }
+ a {
+   text-decoration: none;
+   color: #ffff;
+   
+}
+#whats{
+   margin-left: 10px;
+   width: 8%;
+}
+#nome{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+   font-size: 30px;
+}
+#identificacao {
+   margin-left: 50px;
+}
+#margem{
+   margin: auto;
+   width: 80%;
+}
+#contato{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 25%;
+}
+#inicio{
+   margin-left: auto;
+   margin-right: 5px;
+   width: 5%;
+}
+#menu{
+   margin-left: 350px;
+   width: 8%;
+   width: 45%;
+}
+
+.fundo_index {
+    background:#000000;
+ }
