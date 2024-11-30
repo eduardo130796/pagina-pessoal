@@ -1,92 +1,50 @@
-.h1 {
-   text-align: center;
-   color:rgb(62, 95, 158);
-   font-size: 110px;
-}
-
-.img_menu {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 10%;
-}
-ul {
-   list-style-type: circle;
-}
-li {
-   color: darkred;
-   padding: 0px;
-   margin-left: 10px;
-}
-label {
-   font-family: 'Arial Narrow';
-   color:rgb(62, 95, 158);
-   margin-left: 50px;
-   font-size: 20px;
-}
-input{
-   width: 50%;
-   padding: 5px 10px;
-   margin-left: 50px;
-   box-sizing: border-box;
- }
- form{
-   display: block;
-   margin-left: auto;
-   margin-right: 50px;
-   width: 70%;
- }
- textarea {
-   width: 50%;
-   height: 150px;
-   padding: 12px 20px;
-   box-sizing: border-box;
-   border: 2px solid #ccc;
-   border-radius: 4px;
-   background-color: #f8f8f8;
-   resize: none;
-   margin-left: 50px;
-   margin-right: 50px;
- }
-input[type=submit] {
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: large;
-   background-color: #daa520;
-   border: none;
-   color: white;
-   padding: 16px 32px;
-   text-decoration: none;
-   margin: 4px 2px;
-   cursor: pointer;
-   margin-left: 50px;
-   margin-right: 50px;
- }
- a {
-   text-decoration: none;
-   color: #ffff;
-   
-}
-#identificacao {
-   margin-left: 50px;
-}
-#margem{
-   margin: auto;
-   width: 80%;
+#cont form {
+   padding: 20px; /* Espaçamento interno */
+   border-radius: 8px; /* Bordas arredondadas */
+   background-color: #d1d1d1; /* Fundo claro para destaque */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+   color:#000000;
+   margin-bottom: 10px;
+   margin-top: 30px;
 }
 #contato{
+   margin: auto;
    display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 25%;
+   max-width: 300px;
 }
-#inicio{
-   margin-left: auto;
-   margin-right: 5px;
-   width: 5%;
+#voltarTopo {
+   position: fixed;
+   bottom: 20px; /* Distância do rodapé */
+   right: 10px; /* Distância da lateral direita */
+   z-index: 1000; /* Para garantir que fique sobre outros elementos */
+   cursor: pointer; /* Trocar o cursor para "mãozinha" */
+   display: none; /* Inicialmente escondido */
+}
+
+#voltarTopo img {
+   width: 50px; /* Largura da seta */
+   height: 50px; /* Altura da seta */
+   transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+#voltarTopo img:hover {
+   transform: scale(1.1); /* Aumentar um pouco ao passar o mouse */
+}
+
+.btn-primary {
+   background-color: #115196fd;
+   border-color: #115196fd;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+   background-color: #ffcc00;
+   transform: scale(1.05);
 }
 .fundo_index {
    background: linear-gradient(to bottom, #000000, #1a1a1a);
    color: #f5f5f5;
+   font-family: "Roboto" sans-serif;
  }
 .fundo_menu{
    background-color: #000000;
@@ -97,9 +55,12 @@ ul.navbar-nav a{
    margin-right: 5px;
 }
 ul.navbar-nav a:hover{
-   color: #daa520;
+   color: #017cfffd;
 }
-
+.navbar-nav .nav-link {
+   padding: 10px;
+   font-size: 18px;
+}
 
 .cabecalho{
    margin-top: 130px;
@@ -120,16 +81,61 @@ ul.navbar-nav a:hover{
    font-size: 100px;
 }
 
+#inicio_1 .container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
 
+#ola {
+   font-family: 'Arial Narrow';
+   color:#d1d1d1;
+   font-size: 30px;
+   margin-bottom: 5px;
+}
 
+#nome {
+   font-family: 'Arial Narrow';
+   color:#115196fd;
+   font-size: 60px;
+   max-width: 500px;
+   margin-bottom: 10px;
+   
+}
+#subnome {
+   font-family: 'Arial Narrow';
+   color:#d1d1d1;
+   font-size: 15px;
+   max-width: 430px; /* Mesmo limite de largura do #nome */
+   margin: 0 auto; /* Centraliza o texto */
+   line-height: 1.6; /* Melhora a leitura */
+   text-align: justify;
+   margin-top: 5px; /* Diminui o espaço superior do subnome */
+   margin-bottom: 0;
+}
+
+.img_avatar {
+   margin: auto;
+   display: block;
+}
 .letras_nome{
    color: #ffcc00;
    font-size: 75px;
    font-family: 'Arial Narrow';
 }
+.letras_nome_menu{
+   color: #ffcc00;
+   font-size: 15px;
+   font-family: 'Arial Narrow';
+   font-weight: bold;
+   border-bottom: 2px solid #ffcc00;
+   padding-bottom: 1px;
+   display: inline-block;
 
+}
 .titulos{
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Montserrat', sans-serif;
    color:#ffcc00;
    margin-bottom: 50px;
    font-weight: bold;
@@ -138,6 +144,11 @@ ul.navbar-nav a:hover{
    display: inline-block;
    
 }
+#form, #hob, #atua, #identi {
+   border-left: 5px solid #ffcc00;
+   padding-left: 15px;
+}
+
 #identi{
    margin-top: 250px;
    margin-bottom: 250px;
@@ -150,8 +161,16 @@ ul.navbar-nav a:hover{
    margin-top: 300px;
    margin-bottom: 200px;
 }
+#hob{
+   margin-top: 300px;
+   margin-bottom: 250px;
+}
+#cont{
+   margin-top: 200px;
+   margin-bottom: 100px;
+}
 #nome_ident {
-   font-family: serif;
+   font-family: "Roboto",serif;
    color:#115196fd;
    font-size: 60px;
    margin-bottom: 0;
@@ -159,7 +178,7 @@ ul.navbar-nav a:hover{
 }
 
 #itens {
-   font-family: sans-serif;
+
    color:#d1d1d1;
    font-size: 20px;
    margin-bottom: 10px;
@@ -182,6 +201,14 @@ ul.navbar-nav a:hover{
    scroll-margin-top: 200px;
    scroll-margin-bottom: 150px;
 }
+.secoes_hob{
+   scroll-margin-top: 250px;
+   scroll-margin-bottom: 150px;
+}
+.secoes_cont{
+   scroll-margin-top: 100px;
+   scroll-margin-bottom: 150px;
+}
 #inicio_1{
    scroll-margin-top: 250px;
 }
@@ -200,28 +227,35 @@ ul.navbar-nav a:hover{
 .navbar-toggler {
    margin-left: auto;
 }
-#ola, #nome, #subnome {
-   margin: 0;
-   margin-right: 150px;
-   padding: 0;
-   margin-bottom: 0px;
-}
 
-.img_avatar {
-   margin: auto;
-   display: block;
-}
 
 .cabecalho {
    text-align: center;
    padding-top: 20px;
 }
 
-@media (max-width: 576px) {
-   #nome {
-       font-size: 1.5rem;
-   }
-   #subnome {
-       font-size: 5rem;
-   }
+/* Estilo do ícone do menu (hambúrguer) */
+.navbar-toggler-icon {
+   background-color: #f5f5f5; /* Branco para contraste */
+}
+/* Hover nos links */
+.nav-link:hover {
+   background-color: #ffcc00; /* Dourado ao passar o mouse */
+}
+img {
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+   transform: scale(1.05);
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+#feito {
+   font-size: 16px; /* Tamanho do texto */
+   color: #6c757d; /* Cor cinza suave */
+   margin-top: 15px; /* Espaçamento entre os ícones e o texto */
+}
+
+#por {
+   color: #ffcc00; /* Dourado para destacar seu nome */
 }

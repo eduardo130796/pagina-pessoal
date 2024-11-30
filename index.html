@@ -7,12 +7,13 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/css.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
     </head>
     <body class="fundo_index">
         <div  class="container">
             <nav class="navbar navbar-expand-lg fundo_menu shadow-sm fixed-top">
                 <div class="container">
-                    <img class="img_menu" src="img/portfolio.png" width="30">
+                    <a class="navbar-brand letras_nome_menu" href="#inicio_1">Eduardo Júnior</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -31,11 +32,11 @@
             <div id="inicio_1" class="container cabecalho py-5">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-7 text-center text-md-start">
-                        <p id="ola" class="fs-3">Olá,</p>
-                        <p id="nome" class="fs-2">Eu sou <strong class="letras_nome">Eduardo</strong> Júnior</p>
-                        <p id="subnome" class="fs-5">Bem-vindo ao meu portfólio! Aqui você encontrará detalhes sobre minha trajetória, habilidades e projetos na área de desenvolvimento de sistemas.</p>
+                        <p id="ola" class="fs-3 mb-2">Olá,</p>
+                        <p id="nome" class="fs-2 mb-2">Eu sou <strong class="letras_nome">Eduardo</strong> Júnior</p>
+                        <p id="subnome" class="fs-6 mx-auto mx-md-0">Bem-vindo ao meu portfólio! Aqui você encontrará detalhes sobre minha trajetória, habilidades e projetos na área de desenvolvimento de sistemas.</p>
                     </div>
-                    <div class="col-12 col-md-5 text-center text-md-start">
+                    <div class="col-12 col-md-5 text-center text-md-start mb-4 mb-md-0">
                         <img src="img/avatar.png" alt="Foto Eduardo" class="img-fluid rounded-circle img_avatar" style="width: 100%; max-width: 300px;">
                     </div>
                 </div>
@@ -76,7 +77,7 @@
                     <h1 class="titulos">ATUAÇÃO PROFISSIONAL</h1>
                     <ul class="list-unstyled">
                         <li class="mb-3">
-                            <h5 class="itens_form"><strong>Assitente Administrativo - DPU</strong></h5>
+                            <h5 class="itens_form"><strong>Assistente Administrativo - DPU</strong></h5>
                             <p class="mb-0 itens_sub">IBRAPP - 2022 até o momento</p>
                         </li>
                         <li class="mb-3">
@@ -97,52 +98,83 @@
                         </li>
                     </ul>
                 </div>
-                <div id="hob">
-                    <h3>HOBBIES</h3>
-                    <br/>
-                    <ul>
-                        <li><p>Natação</p></li>
-                        <li><p>Ler livros</p></li>
-                        <li><p>Cozinhar</p></li>
-                        <li><p>Aprender programação</p></li>
+                <div id="hob" class="container text-center text-md-start secoes_hob">
+                    <h1 class="titulos">HOBBIES</h1>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <h5 class="itens_form"><i class="fas fa-swimmer me-2"></i><strong>Natação</strong></h5>
+                        </li>
+                        <li class="mb-3">
+                            <h5 class="itens_form"><i class="fas fa-book me-2"></i><strong>Ler livros</strong></h5>
+                        </li>
+                        <li class="mb-3">
+                            <h5 class="itens_form"><i class="fas fa-utensils me-2"></i><strong>Cozinhar</strong></h5>
+                        </li>
+                        <li class="mb-3">
+                            <h5 class="itens_form"><i class="fas fa-code me-2"></i></i><strong>Aprender programação</strong></h5>
+                        </li>
                     </ul>
-                    <br/>
-                    <br/>
                 </div>
-                <div id="cont">   
+                <div id="cont" class="container text-center text-md-start secoes_cont">
                     <img id="contato" src="img/entre_contato.png" alt="entre em contato" title="contato">
-                    <br/>
-                    <br/>
-                    <form>
-                        <br/>
-                        <label>Nome:</label>
-                        <br/>
-                        <input type="text">
-                        <br/>
-                        <br/>
-                        <label>E-mail:</label>
-                        <br/>
-                        <input type="email">
-                        <br/>
-                        <br/>
-                        <label>Telefone:</label>
-                        <br/>
-                        <input type="tel">
-                        <br/>
-                        <br/>
-                        <label>Mensagem:</label>
-                        <br/>
-                        <textarea placeholder="Deixe sua Mensagem"></textarea>
-                        <br/>
-                        <br/>
-                        <input type="submit" value="Enviar">
-                        <br/>
-                        <br/>
+                    <form class="mx-auto" style="max-width: 600px;">
+                        <div class="row g-3 mb-3">
+                            <div class="col-12 col-md-6">
+                                <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                <input type="text" class="form-control" placeholder="Primeiro Nome" aria-label="First name">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="exampleFormControlInput1" class="form-label">Sobrenome</label>
+                                <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Last name">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="(DD) 99999-9999">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deixe a sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
                     </form>
-                    <a  href="#topo"><img id="inicio" src="img/topo.png"></a>
+                </div>
+                <a href="#inicio_1" id="voltarTopo">
+                    <img  src="img/topo.png" alt="Voltar ao topo" title="Voltar ao topo">
+                </a>
+                <div class="text-center mt-5">
+                    <a href="https://linkedin.com/in/eduardo-junior-01264133b" target="_blank" class="me-3">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/eduardo130796" target="_blank" class="me-3">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="mailto:eduardo.jrcabral@hotmail.com" class="me-3">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                    <p class="mt-4 text" id="feito">Feito por: <strong id="por">Eduardo Júnior</strong></p>
                 </div>
             </div>
+            
         </div>
+        <script>
+            // Exibe a seta apenas quando o usuário rolar para baixo
+            window.addEventListener('scroll', function () {
+                const botaoVoltarTopo = document.getElementById('voltarTopo');
+                if (window.scrollY > 300) { // Mostra a seta após 300px
+                    botaoVoltarTopo.style.display = 'block';
+                } else {
+                    botaoVoltarTopo.style.display = 'none';
+                }
+            });
+        </script>
+        
         <script src="js/bootstrap.js"></script>
     </body>
 </html>
