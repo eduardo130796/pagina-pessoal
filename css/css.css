@@ -125,7 +125,7 @@ ul.navbar-nav a:hover{
    font-family: 'Arial Narrow';
 }
 .letras_nome_menu{
-   color: #ffcc00;
+   color: #ffcc00 !important;
    font-size: 15px;
    font-family: 'Arial Narrow';
    font-weight: bold;
