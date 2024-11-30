@@ -123,27 +123,18 @@ ul.navbar-nav a:hover{
 #ola {
    font-family: 'Arial Narrow';
    color:#d1d1d1;
-   margin-left: 20px;
    font-size: 30px;
-   margin-bottom: 0;
-   
 }
 
 #nome {
    font-family: 'Arial Narrow';
    color:#115196fd;
-   margin-left: 20px;
    font-size: 60px;
-   margin-bottom: 0;
-   margin-top: 0%;
 }
 #subnome {
    font-family: 'Arial Narrow';
    color:#d1d1d1;
-   margin-left: 20px;
    font-size: 15px;
-   margin-bottom: 0;
-   margin-top: 0%;
 }
 .letras_nome{
    color: #ffcc00;
@@ -225,6 +216,7 @@ ul.navbar-nav a:hover{
 }
 #ola, #nome, #subnome {
    margin: 0;
+   margin-right: 150px;
    padding: 0;
 }
 
@@ -243,6 +235,6 @@ ul.navbar-nav a:hover{
        font-size: 1.5rem;
    }
    #subnome {
-       font-size: 1rem;
+       font-size: 5rem;
    }
 }
