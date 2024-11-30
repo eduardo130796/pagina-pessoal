@@ -99,12 +99,7 @@ ul.navbar-nav a{
 ul.navbar-nav a:hover{
    color: #daa520;
 }
-.img_avatar {
-   display:block;
-   margin-left: 700px;
-   margin-right: auto;
-   width: 150%;
-}
+
 
 .cabecalho{
    margin-top: 130px;
@@ -224,4 +219,30 @@ ul.navbar-nav a:hover{
    font-family: sans-serif;
    color:#d1d1d1;
    font-size: 15px;
+}
+.navbar-toggler {
+   margin-left: auto;
+}
+#ola, #nome, #subnome {
+   margin: 0;
+   padding: 0;
+}
+
+.img_avatar {
+   margin: auto;
+   display: block;
+}
+
+.cabecalho {
+   text-align: center;
+   padding-top: 20px;
+}
+
+@media (max-width: 576px) {
+   #nome {
+       font-size: 1.5rem;
+   }
+   #subnome {
+       font-size: 1rem;
+   }
 }
