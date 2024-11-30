@@ -120,22 +120,8 @@ ul.navbar-nav a:hover{
    font-size: 100px;
 }
 
-#ola {
-   font-family: 'Arial Narrow';
-   color:#d1d1d1;
-   font-size: 30px;
-}
 
-#nome {
-   font-family: 'Arial Narrow';
-   color:#115196fd;
-   font-size: 60px;
-}
-#subnome {
-   font-family: 'Arial Narrow';
-   color:#d1d1d1;
-   font-size: 15px;
-}
+
 .letras_nome{
    color: #ffcc00;
    font-size: 75px;
@@ -218,6 +204,7 @@ ul.navbar-nav a:hover{
    margin: 0;
    margin-right: 150px;
    padding: 0;
+   margin-bottom: 0px;
 }
 
 .img_avatar {
